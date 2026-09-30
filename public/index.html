@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout.com Flow test</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; padding: 0 1rem; }
+    #result { margin-top: 1rem; padding: 1rem; border-radius: 6px; display: none; white-space: pre-wrap; font-family: monospace; }
+    #result.ok { background: #e6f7ec; display: block; }
+    #result.bad { background: #fdeaea; display: block; }
+  </style>
+</head>
+<body>
+  <h2>Test order: £10.00</h2>
+  <div id="flow-container"></div>
+  <div id="result"></div>
+
+  <!-- Must be loaded from Checkout.com directly (PCI requirement) -->
+  <script src="https://checkout-web-components.checkout.com/index.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
